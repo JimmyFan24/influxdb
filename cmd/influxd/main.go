@@ -52,6 +52,7 @@ func NewMain() *Main {
 		Stdout: os.Stdout,
 		Stderr: os.Stderr,
 	}
+
 }
 
 // Run determines and runs the command specified by the CLI args.
