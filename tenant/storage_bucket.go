@@ -283,7 +283,7 @@ func (s *Store) listBucketsByOrg(ctx context.Context, tx kv.Tx, orgID platform.I
 
 		bs = append(bs, b)
 
-		if len(bs) >= o.Limit {
+		if o.Limit != 0 && len(bs) >= o.Limit {
 			break
 		}
 	}
